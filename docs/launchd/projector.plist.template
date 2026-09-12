@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>__LABEL__</string>
+  <key>ProgramArguments</key><array>
+    <string>__PYTHON_BIN__</string><string>-m</string><string>orchestrator.cli</string><string>project</string>
+  </array>
+  <key>EnvironmentVariables</key><dict>
+    <key>HOME</key><string>__HOME_DIR__</string>
+    <key>OPENCLAW_HOME</key><string>__OPENCLAW_HOME__</string>
+    <key>PATH</key><string>/opt/homebrew/bin:/usr/bin:/bin:__HOME_DIR__/.local/bin</string>
+    <key>PYTHONPATH</key><string>__PROJECT_DIR__/src</string>
+    <key>FTO_LARK_CLI_BIN</key><string>__LARK_CLI_BIN__</string>
+    <!-- 飞书身份相关配置（如 FTO_LARK_PROFILE）建议放在项目 .env 中 -->
+  </dict>
+  <key>WorkingDirectory</key><string>__PROJECT_DIR__</string>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><dict><key>SuccessfulExit</key><false/></dict>
+  <key>ThrottleInterval</key><integer>3</integer>
+  <key>StandardOutPath</key><string>__PROJECT_DIR__/var/projector.log</string>
+  <key>StandardErrorPath</key><string>__PROJECT_DIR__/var/projector-error.log</string>
+</dict></plist>

@@ -1,0 +1,12 @@
+[project]
+name = "feishu-task-orchestrator"
+version = "0.1.0"
+description = "OpenClaw task ledger to Feishu Task/Card projection bridge"
+requires-python = ">=3.11"
+
+[project.scripts]
+feishu-task-orchestrator = "orchestrator.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
