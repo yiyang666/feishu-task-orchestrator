@@ -68,11 +68,14 @@ OpenClaw 运行时                     本地（本项目）                    
   18:14:35 · Jarvis · 进行中 · 派发子任务
   18:14:41 · code   · 已完成 · 实现接口
 ```
-
 卡片只承载**身份 / 任务 / 状态 / 时间**，不承载结论——中间结果留在数据层供协调者审计，最终结果由协调者以文字汇报交付。
-
 ---
 
+## 示意图：
+<img width="1362" height="1304" alt="image" src="https://github.com/user-attachments/assets/f9171355-839a-485d-b151-75f16db6f288" />
+<img width="1160" height="1569" alt="image" src="https://github.com/user-attachments/assets/e1ce603f-ac09-4379-824e-62ed4c10eebe" />
+
+---
 ## 部署步骤
 
 ### 0. 前置条件
